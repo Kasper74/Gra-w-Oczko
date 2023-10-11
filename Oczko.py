@@ -22,10 +22,10 @@ if karty_przeciwnika == 21:
 
 
 if  sumaLiczb == karty_przeciwnika or (sumaLiczb > 21 and karty_przeciwnika > 21):
-    print("Remis! ")
+    print("Remis!")
 
 elif sumaLiczb <= 21 and karty_przeciwnika > 21:
-    print("Wygrałeś")
+    print("Wygrałeś!")
   
 elif karty_przeciwnika <= 21 and sumaLiczb > 21:
    print("Przegrałeś!")

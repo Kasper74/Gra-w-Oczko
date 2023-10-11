@@ -16,10 +16,10 @@ for i in range(liczbakart):
 sumaLiczb = sum(karty_gracza)
 print(f"Twoja suma: {sumaLiczb}")
 print(f"Suma przeciwnika: {karty_przeciwnika}")
+
 # Wysyłanie wiadomości o Wygranej / Przegranej
 if karty_przeciwnika == 21:
    print("Twój przeciwnik wygrał!")
-
 
 if  sumaLiczb == karty_przeciwnika or (sumaLiczb > 21 and karty_przeciwnika > 21):
     print("Remis!")

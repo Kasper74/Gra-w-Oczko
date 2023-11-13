@@ -4,6 +4,7 @@ import random
 liczbakart = int(input("Podaj liczbę kart: "))
 odpowiedz = ""
 sumaLiczb = 0
+
 # Dane o kartach
 mozliwe_karty = [4, 3, 2, 10, 11]
 karty_gracza = []
@@ -17,8 +18,11 @@ for i in range(liczbakart):
 print(f"Twoje karty: {karty_gracza}")
 
 odpowiedz = input("Czy chcesz kontynuować losowanie kart?: ")
+
+# Jeśli odpowiedź to "Tak"
 while odpowiedz.lower() == "tak":
     liczbakart = int(input("Ile kart chcesz wylosować?: ")) 
+
     # Tworzenie kart
     for i in range(liczbakart):
         nowa_karta = random.choice(mozliwe_karty)
@@ -36,7 +40,6 @@ print(f"Suma Przeciwika: {karty_przeciwnika}")
 # Wysyłanie wiadomości o Wygranej / Przegranej
 if karty_przeciwnika == 21:
     print("Twój przeciwnik wygrał!")
-
 
 if  sumaLiczb == karty_przeciwnika or (sumaLiczb > 21 and karty_przeciwnika > 21):
     print("Remis!")

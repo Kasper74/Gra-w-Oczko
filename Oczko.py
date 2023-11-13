@@ -31,7 +31,7 @@ sumaLiczb = sum(karty_gracza)
 # Wypisywanie danych
 print(f"Twoje Liczby: {karty_gracza}")
 print(f"Twoja Suma: {sumaLiczb}")
-print(f"Suma Przeciwika {karty_przeciwnika}")
+print(f"Suma Przeciwika: {karty_przeciwnika}")
 
 # Wysyłanie wiadomości o Wygranej / Przegranej
 if karty_przeciwnika == 21:
